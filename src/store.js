@@ -18,7 +18,7 @@ const configureStore = (onComplete) => {
   }
 
   const store = createStore(reducers, undefined, compose(...enhancers));
-  persistStore(store, { storage: AsyncStorage }, () => setTimeout(onComplete, 500));
+  persistStore(store, { storage: AsyncStorage }, () => setTimeout(onComplete, 1500));
 
   return store;
 };

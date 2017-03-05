@@ -6,7 +6,7 @@ import {
     View,
 } from 'react-native';
 import splashStyles from './style';
-import colors from '../colors';
+import colors from '../../global/colors';
 
 const logo = require('../../../assets/images/logo.png');
 
