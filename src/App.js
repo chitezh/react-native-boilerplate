@@ -13,6 +13,10 @@ class SFAApp extends PureComponent {
     User: {},
   }
 
+  componentDidMount() {
+    this.handleNav(this.props);
+  }
+
   componentWillReceiveProps(nextProps) {
     this.handleNav(nextProps);
   }
@@ -21,14 +25,13 @@ class SFAApp extends PureComponent {
     const { User } = props;
     if (User.isAuthenticated) {
       Actions.home();
-    } else if (!User.isAuthenticated && !User.data) {
-      Actions.intro();
+    } else if (!User.isAuthenticated) {
+      Actions.example();
     }
   }
 
   render() {
-    const { User: { isAuthenticated } } = this.props;
-    return <RootRouter isAuthenticated={isAuthenticated} />;
+    return <RootRouter />;
   }
 }
 
