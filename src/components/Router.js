@@ -5,7 +5,7 @@ import Example from './scenes/example/Example';
 
 const Scenes = Actions.create(
   <Scene key="root">
-    <Scene key="intro" component={Example} title="Example" type={ActionConst.REPLACE} />
+    <Scene key="example" component={Example} title="Example" type={ActionConst.REPLACE} />
   </Scene>,
 );
 
