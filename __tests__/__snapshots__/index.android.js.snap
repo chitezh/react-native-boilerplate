@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "space-around",
+      "padding": 50,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={Object {}}
+  />
+  <ActivityIndicator
+    animating={true}
+    color={undefined}
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;
