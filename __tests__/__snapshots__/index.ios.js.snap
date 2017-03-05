@@ -13,11 +13,16 @@ exports[`renders correctly 1`] = `
 >
   <Image
     source={1}
-    style={Object {}}
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
   />
   <ActivityIndicator
     animating={true}
-    color={undefined}
+    color="#2dad9c"
     hidesWhenStopped={true}
     size="large"
   />
